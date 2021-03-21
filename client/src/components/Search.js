@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Results from './Results'
-import { TextField, Button } from '@material-ui/core'
+import { TextField, Button, Grid } from '@material-ui/core'
 import LocalBarTwoToneIcon from '@material-ui/icons/LocalBarTwoTone'
 
 const Search = () => {
@@ -27,35 +27,39 @@ const Search = () => {
       const res = await axios.get(
         `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${query}`,
       )
-      // console.log(res.data)
+      console.log(res.data)
       setResults(res.data)
     }
+
     getDrinks()
-    console.log('Results', results)
   }, [query])
 
   return (
     <div className="search-bar">
-      <form onSubmit={getSearch} className="form">
-        <LocalBarTwoToneIcon />
-        <TextField
-          type="text"
-          id="standard-basic"
-          value={search}
-          onChange={updateSearch}
-          label={`Search`}
-        />
-        <Button className="search-button" type="submit">
-          Search
-        </Button>
-      </form>
-      <div className="updatedResults">
-        {returnedResults ? (
-          <Results results={results} />
-        ) : (
-          <div>Look for something</div>
-        )}
-      </div>
+      <Grid container item xs={8} spacing={3}>
+        <form onSubmit={getSearch} className="form">
+          <LocalBarTwoToneIcon />
+          <TextField
+            type="text"
+            id="standard-basic"
+            value={search}
+            onChange={updateSearch}
+            label={`Search`}
+          />
+          <Button className="search-button" type="submit" variant="outlined">
+            Search
+          </Button>
+        </form>
+      </Grid>
+      <Grid container item xs={12} spacing={3}>
+        <div className="updatedResults">
+          {returnedResults ? (
+            <Results results={results} />
+          ) : (
+            <div>Look for something</div>
+          )}
+        </div>
+      </Grid>
     </div>
   )
 }

@@ -16,15 +16,29 @@ const Results = ({ results }) => {
       ingredients.push(ingredient)
       // console.log(ingredients)
     }
-
+    const title = { color: 'grey', fontSize: '40px' }
     return (
       <div className="results">
         <div className="drinklist" key={`${results.drinks[0].idDrink}`}>
-          <h2>Name: {results.drinks[0].strDrink}</h2>
-          <div>Directions: {results.drinks[0].strInstructions}</div>
-          <br />
+          <h2 style={title}>{results.drinks[0].strDrink}</h2>
+          <hr />
           <div>
-            Ingredients:
+            <img
+              src={`${results.drinks[0].strDrinkThumb}`}
+              height="200"
+              width="200"
+              justifyContent="center"
+            />
+          </div>
+          <hr />
+
+          <div>
+            <h3>Directions:</h3> {results.drinks[0].strInstructions}
+          </div>
+
+          <hr />
+          <div>
+            <h3>Ingredients:</h3>
             <ul>
               {ingredients.map((ingredient, index) => {
                 if (ingredient === null || ingredient === 0) {
@@ -35,6 +49,7 @@ const Results = ({ results }) => {
               })}
             </ul>
           </div>
+          <hr />
         </div>
       </div>
     )
