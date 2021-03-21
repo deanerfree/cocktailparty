@@ -5,7 +5,7 @@ import { TextField, Button } from '@material-ui/core'
 import LocalBarTwoToneIcon from '@material-ui/icons/LocalBarTwoTone'
 
 const Search = () => {
-  const [query, setQuery] = useState('')
+  const [query, setQuery] = useState(null)
   const [search, setSearch] = useState('')
   const [results, setResults] = useState()
   const [returnedResults, setReturnedResults] = useState(false)
@@ -16,24 +16,22 @@ const Search = () => {
 
   const getSearch = (event) => {
     event.preventDefault()
-    console.log('getSearch called')
+    // console.log('getSearch called')
     setQuery(search)
     setReturnedResults(true)
     setSearch('')
   }
 
-  console.log('Results', results)
   useEffect(() => {
     const getDrinks = async () => {
       const res = await axios.get(
         `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${query}`,
       )
-      console.log(res.data)
+      // console.log(res.data)
       setResults(res.data)
     }
-    if (query) {
-      getDrinks()
-    }
+    getDrinks()
+    console.log('Results', results)
   }, [query])
 
   return (

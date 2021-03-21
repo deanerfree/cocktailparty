@@ -4,9 +4,7 @@ const Results = ({ results }) => {
   if (results?.drinks === null || results?.drinks === undefined) {
     return (
       <div className="results">
-        <div className="drinklist" key="0">
-          No Drink Found
-        </div>
+        <div className="drinklist">No Drink Found</div>
       </div>
     )
   } else {
@@ -16,7 +14,7 @@ const Results = ({ results }) => {
         results.drinks[0][`strMeasure${i}`] +
         results.drinks[0][`strIngredient${i}`]
       ingredients.push(ingredient)
-      console.log(ingredients)
+      // console.log(ingredients)
     }
 
     return (
@@ -28,11 +26,11 @@ const Results = ({ results }) => {
           <div>
             Ingredients:
             <ul>
-              {ingredients.map((ingredient) => {
+              {ingredients.map((ingredient, index) => {
                 if (ingredient === null || ingredient === 0) {
                   return
                 } else {
-                  return <li>{ingredient}</li>
+                  return <li key={index}>{ingredient}</li>
                 }
               })}
             </ul>
