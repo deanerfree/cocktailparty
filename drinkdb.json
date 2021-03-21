@@ -1,0 +1,87 @@
+{
+  "drinks": [
+    {
+      "cocktail": "Negroni",
+      "type": "",
+      "ingredients": [
+        {
+          "name": "Gin",
+          "volume": "1",
+          "unit": "oz"
+        },
+        {
+          "name": "Campari",
+          "volume": "1",
+          "unit": "oz"
+        },
+        {
+          "name": "Sweet Vermouth",
+          "volume": "1",
+          "unit": "oz"
+        }
+      ],
+      "directions": [
+        "Add the gin, Campari and sweet vermouth to a mixing glass filled with ice, and stir until well-chilled.",
+        "Strain into a rocks glass filled with large ice cubes.",
+        "Garnish with an orange peel."
+      ]
+    },
+    {
+      "cocktail": "Boulevardier",
+      "ingredients": [
+        {
+          "name": "Whiskey, Rye (or bourbon)",
+          "volume": "1",
+          "unit": "oz"
+        },
+        {
+          "name": "Campari",
+          "volume": "1",
+          "unit": "oz"
+        },
+        {
+          "name": "Sweet Vermouth",
+          "volume": "1",
+          "unit": "oz"
+        },
+        {
+          "name": "ice"
+        }
+      ],
+      "directions": [
+        "Add Rye, Campari and Sweet Vermouth into a mixing glass with ice and stir until well-chilled.",
+        "Strain into a rocks glass over fresh ice.",
+        "Garnish with an orange twist."
+      ]
+    },
+    {
+      "cocktail": "Manhattan",
+      "ingredients": [
+        {
+          "name": "Whiskey, rye",
+          "volume": "2",
+          "unit": "oz"
+        },
+        {
+          "name": "Campari",
+          "volume": "1",
+          "unit": "oz"
+        },
+        {
+          "name": "Bitters",
+          "volume": "3",
+          "unit": "dashes"
+        },
+        {
+          "name": "Cherry",
+          "volume": "1"
+        },
+      ],
+      "directions": [
+        "Add all the bourbon (or rye), sweet vermouth and both bitters to a mixing glass with ice, and stir until well-chilled.",
+        "Strain into a chilled coupe.",
+        "Garnish with a brandied cherry."
+      ]
+    }
+  ]
+}
