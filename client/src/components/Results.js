@@ -1,10 +1,12 @@
 import React from 'react'
 
 const Results = ({ results }) => {
-  if (results?.drinks === null) {
+  if (results?.drinks === null || results?.drinks === undefined) {
     return (
       <div className="results">
-        <div className="drinklist">No Drink Found</div>
+        <div className="drinklist" key="0">
+          No Drink Found
+        </div>
       </div>
     )
   } else {

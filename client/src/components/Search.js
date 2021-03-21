@@ -22,16 +22,18 @@ const Search = () => {
     setSearch('')
   }
 
-  const getDrinks = async () => {
-    const res = await axios.get(
-      `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${query}`,
-    )
-    console.log(res.data)
-    setResults(res.data)
-  }
   console.log('Results', results)
   useEffect(() => {
-    getDrinks()
+    const getDrinks = async () => {
+      const res = await axios.get(
+        `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${query}`,
+      )
+      console.log(res.data)
+      setResults(res.data)
+    }
+    if (query) {
+      getDrinks()
+    }
   }, [query])
 
   return (
