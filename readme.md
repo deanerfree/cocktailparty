@@ -3,10 +3,14 @@
 Hello, this is an app I decided to create with React that was simple, fun, and scalable. But gave me a chance to learn about 3rd party API's and how to incorporate them into my app
 
 To Run:
-
+Client side:
 1. Clone Repository into your code editor of choice
-2. npm install to install all suporting libraries
-3. npm run
+2. cd client
+3. npm install to install all suporting libraries
+4. npm run
+
+Server side:
+Pending
 
 Things I plan on doing with the app:
 1. Improving design
