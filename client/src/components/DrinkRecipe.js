@@ -29,9 +29,10 @@ const DrinkRecipe = ({ drink }) => {
       </div>
       <hr />
       <div>
-        <h3>Directions:</h3> {drink.strInstructions}
+        <h3>Directions:</h3>
+        {`${drink.strInstructions} `}
       </div>
-
+      <div>{`Serve In: ${drink.strGlass}.`}</div>
       <hr />
     </>
   )

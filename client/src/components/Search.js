@@ -26,14 +26,9 @@ const Search = () => {
       const res = await axios.get(
         `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${query}`,
       )
-      try {
-        if (res.status === 200) {
-          // console.log(res.data)
-          setResults(res.data)
-        }
-      } catch (err) {
-        return res.status(400)
-      }
+
+      console.log(res.data)
+      setResults(res.data)
     }
 
     getDrinks()

@@ -10,9 +10,10 @@ const Results = ({ results }) => {
     )
   } else {
     const title = { color: 'grey', fontSize: '40px' }
+    console.log('These are the results', results)
     return (
       <div className="results">
-        {results.drink.map((drink) => {
+        {results.drinks.map((drink) => {
           return (
             <div className="drinklist" key={`${drink.idDrink}`}>
               <h2 style={title}>{drink.strDrink}</h2>
