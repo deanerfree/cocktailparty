@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DrinkList = ({ drink }) => {
+const DrinkRecipe = ({ drink }) => {
   let ingredients = []
   console.log('The drinkList', drink)
 
@@ -15,12 +15,6 @@ const DrinkList = ({ drink }) => {
         <img src={`${drink.strDrinkThumb}`} height="200" width="200" />
       </div>
       <hr />
-
-      <div>
-        <h3>Directions:</h3> {drink.strInstructions}
-      </div>
-
-      <hr />
       <div>
         <h3>Ingredients:</h3>
         <ul>
@@ -34,8 +28,13 @@ const DrinkList = ({ drink }) => {
         </ul>
       </div>
       <hr />
+      <div>
+        <h3>Directions:</h3> {drink.strInstructions}
+      </div>
+
+      <hr />
     </>
   )
 }
 
-export default DrinkList
+export default DrinkRecipe

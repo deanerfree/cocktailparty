@@ -1,5 +1,5 @@
 import React from 'react'
-import DrinkList from './DrinkList'
+import DrinkRecipe from './DrinkRecipe'
 
 const Results = ({ results }) => {
   if (results?.drinks === null || results?.drinks === undefined) {
@@ -9,24 +9,15 @@ const Results = ({ results }) => {
       </div>
     )
   } else {
-    let drinkList = []
-    let count = 0
-
-    for (let i = 0; i < results.drinks.length; i++) {
-      count = i
-      let result = results.drinks[i]
-      drinkList.push(result)
-    }
-
     const title = { color: 'grey', fontSize: '40px' }
     return (
       <div className="results">
-        {drinkList.map((drink) => {
+        {results.drink.map((drink) => {
           return (
             <div className="drinklist" key={`${drink.idDrink}`}>
               <h2 style={title}>{drink.strDrink}</h2>
               <hr />
-              <DrinkList drink={drink} />
+              <DrinkRecipe drink={drink} />
             </div>
           )
         })}
