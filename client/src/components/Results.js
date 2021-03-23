@@ -1,4 +1,5 @@
 import React from 'react'
+import DrinkList from './DrinkList'
 
 const Results = ({ results }) => {
   if (results?.drinks === null || results?.drinks === undefined) {
@@ -8,49 +9,27 @@ const Results = ({ results }) => {
       </div>
     )
   } else {
-    let ingredients = []
-    for (let i = 1; i < 16; i++) {
-      let ingredient =
-        results.drinks[0][`strMeasure${i}`] +
-        results.drinks[0][`strIngredient${i}`]
-      ingredients.push(ingredient)
-      // console.log(ingredients)
+    let drinkList = []
+    let count = 0
+
+    for (let i = 0; i < results.drinks.length; i++) {
+      count = i
+      let result = results.drinks[i]
+      drinkList.push(result)
     }
+
     const title = { color: 'grey', fontSize: '40px' }
     return (
       <div className="results">
-        <div className="drinklist" key={`${results.drinks[0].idDrink}`}>
-          <h2 style={title}>{results.drinks[0].strDrink}</h2>
-          <hr />
-          <div>
-            <img
-              src={`${results.drinks[0].strDrinkThumb}`}
-              height="200"
-              width="200"
-              justifyContent="center"
-            />
-          </div>
-          <hr />
-
-          <div>
-            <h3>Directions:</h3> {results.drinks[0].strInstructions}
-          </div>
-
-          <hr />
-          <div>
-            <h3>Ingredients:</h3>
-            <ul>
-              {ingredients.map((ingredient, index) => {
-                if (ingredient === null || ingredient === 0) {
-                  return
-                } else {
-                  return <li key={index}>{ingredient}</li>
-                }
-              })}
-            </ul>
-          </div>
-          <hr />
-        </div>
+        {drinkList.map((drink) => {
+          return (
+            <div className="drinklist" key={`${drink.idDrink}`}>
+              <h2 style={title}>{drink.strDrink}</h2>
+              <hr />
+              <DrinkList drink={drink} />
+            </div>
+          )
+        })}
       </div>
     )
   }
