@@ -16,7 +16,6 @@ const Search = () => {
 
   const getSearch = (event) => {
     event.preventDefault()
-    // console.log('getSearch called')
     setQuery(search)
     setReturnedResults(true)
     setSearch('')
@@ -27,8 +26,14 @@ const Search = () => {
       const res = await axios.get(
         `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${query}`,
       )
-      console.log(res.data)
-      setResults(res.data)
+      try {
+        if (res.status === 200) {
+          // console.log(res.data)
+          setResults(res.data)
+        }
+      } catch (err) {
+        return res.status(400)
+      }
     }
 
     getDrinks()
