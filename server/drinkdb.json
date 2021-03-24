@@ -2,7 +2,8 @@
   "drinks": [
     {
       "cocktail": "Negroni",
-      "type": "",
+      "type": "Milanese",
+      "alcohol": "true",
       "ingredients": [
         {
           "name": "Gin",
@@ -24,10 +25,15 @@
         "Add the gin, Campari and sweet vermouth to a mixing glass filled with ice, and stir until well-chilled.",
         "Strain into a rocks glass filled with large ice cubes.",
         "Garnish with an orange peel."
-      ]
+      ],
+      "history": "The Negroni is believed to have been created in Florence at Bar Casoni by an Italian Count 'Camillo Negroni' in the early 20th century. The Count demanded that the bartender strengthen his favorite cocktail, the Americano, by replacing the soda water with gin. To further differentiate the drink, the bartender also employed an orange peel rather than the typical lemon peel.",
+      "video": "https://youtu.be/2IXWmW1R898",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Negroni_served_in_Vancouver_BC.jpg/640px-Negroni_served_in_Vancouver_BC.jpg"
     },
     {
       "cocktail": "Boulevardier",
+      "type": "",
+      "alcohol": "true",
       "ingredients": [
         {
           "name": "Whiskey, Rye (or bourbon)",
@@ -49,13 +55,18 @@
         }
       ],
       "directions": [
-        "Add Rye, Campari and Sweet Vermouth into a mixing glass with ice and stir until well-chilled.",
+        "Add Rye (or Bourbon), Campari and Sweet Vermouth into a mixing glass with ice and stir until well-chilled.",
         "Strain into a rocks glass over fresh ice.",
         "Garnish with an orange twist."
-      ]
+      ],
+      "history": "The Boulevardier is similar to the Negroni, but it's origins date back to the 1920's.  An expatriate writer Erskine Gwynne, who founded a Paris literary magazine 'The Boulevardier'.",
+      "video": "https://youtu.be/9Pey-ulGNRY",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/SOHO_-_Boulevardier.jpg/512px-SOHO_-_Boulevardier.jpg"
     },
     {
       "cocktail": "Manhattan",
+      "type": "French-Italian",
+      "alcohol": "true",
       "ingredients": [
         {
           "name": "Whiskey, rye",
@@ -75,13 +86,16 @@
         {
           "name": "Cherry",
           "volume": "1"
-        },
+        }
       ],
       "directions": [
         "Add all the bourbon (or rye), sweet vermouth and both bitters to a mixing glass with ice, and stir until well-chilled.",
         "Strain into a chilled coupe.",
         "Garnish with a brandied cherry."
-      ]
+      ],
+      "history": "",
+      "video": "https://youtu.be/wiOxt4J5zaM",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Manhattan_cocktail_with_ice.jpg/511px-Manhattan_cocktail_with_ice.jpg"
     }
   ]
 }

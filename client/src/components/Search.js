@@ -11,6 +11,7 @@ const Search = () => {
   const [returnedResults, setReturnedResults] = useState(false)
 
   const updateSearch = (event) => {
+    event.preventDefault()
     setSearch(event.target.value)
   }
 
@@ -46,7 +47,12 @@ const Search = () => {
             onChange={updateSearch}
             label={`Search`}
           />
-          <Button className="search-button" type="submit" variant="outlined">
+          <Button
+            className="search-button"
+            type="submit"
+            variant="outlined"
+            onClick={getSearch}
+          >
             Search
           </Button>
         </form>
