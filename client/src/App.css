@@ -2,9 +2,8 @@
 
 .navbar{
   display: flex;
-  flex-direction: row;
-
   align-items: center;
+  justify-content: space-between;
   background-color: rgb(26,46,70);
   height: 10vh;
 }
@@ -13,6 +12,17 @@
   font-family: 'Peralta', cursive;
   font-size: 36px;
   color:aliceblue;
+}
+.navbarList {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.navbarItems {
+  color: aliceblue;
+  margin: 20px;
+  display: inline;  
 }
 .search-bar{
   display: flex;
@@ -30,3 +40,4 @@
 .updatedResults{
   margin: 20px;
 }
+
