@@ -12,8 +12,10 @@
   font-family: 'Peralta', cursive;
   font-size: 36px;
   color:aliceblue;
+  text-decoration: none;
 }
 .navbarList {
+  margin: 20px;
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -22,7 +24,16 @@
 .navbarItems {
   color: aliceblue;
   margin: 20px;
-  display: inline;  
+  display: inline; 
+  text-decoration: none; 
+}
+
+.navbarItems:hover {
+  color: aliceblue;
+  margin: 20px;
+  display: inline; 
+  text-decoration: underline; 
+  font-weight: bold;
 }
 .search-bar{
   display: flex;
@@ -41,3 +52,6 @@
   margin: 20px;
 }
 
+.mainWindow {
+  margin: 30px;
+}

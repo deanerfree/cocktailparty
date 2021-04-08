@@ -1,19 +1,26 @@
 import React, { useState } from 'react'
-import DropDownMenu from 'material-ui/DropDownMenu'
 
 const Cocktails101 = () => {
   const [selectedItem, setSelectedItem] = useState()
 
-  const handleClick = (event) => {
-    event
-  }
+  const spiritList = [
+    'Bourbon',
+    'Brandy',
+    'Gin',
+    'Rum',
+    'Rye',
+    'Scotch',
+    'Tequila',
+    'Vodka',
+  ]
   return (
     <div>
       <div className="title">
-        <h1>Getting Started</h1>
+        <h1>Common Cocktails by Spirit</h1>
       </div>
+
       <div className="topicList">
-        <div className="topicItem">Rum</div>
+        <div className="topicItem"></div>
       </div>
     </div>
   )

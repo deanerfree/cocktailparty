@@ -1,19 +1,24 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
-  const navbarItems = ['Cocktails 101', 'Tools']
   return (
     <div className="navbar">
-      <div className="logo">Cocktail Party</div>
-      <div className="navbarList">
-        {navbarItems.map((navbarItem, index) => {
-          return (
-            <div className="navbarItems" key={index}>
-              {navbarItem}
-            </div>
-          )
-        })}
-      </div>
+      <NavLink to="/" exact className="logo">
+        <div className="logo">Cocktails</div>
+      </NavLink>
+
+      <nav className="navbarList">
+        <NavLink to="/" exact className="navbarItems">
+          Home
+        </NavLink>
+        <NavLink to="/search" className="navbarItems">
+          Search
+        </NavLink>
+        <NavLink to="/cocktails101" className="navbarItems">
+          Search
+        </NavLink>
+      </nav>
     </div>
   )
 }
