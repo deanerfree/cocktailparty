@@ -1,6 +1,8 @@
 {
   "drinks": [
     {
+      "id": "0",
+      "base": "gin",
       "cocktail": "Negroni",
       "type": "Milanese",
       "alcohol": "true",
@@ -31,6 +33,8 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Negroni_served_in_Vancouver_BC.jpg/640px-Negroni_served_in_Vancouver_BC.jpg"
     },
     {
+      "id": "1",
+      "base": "ryewhiskey",
       "cocktail": "Boulevardier",
       "type": "",
       "alcohol": "true",
@@ -64,6 +68,8 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/SOHO_-_Boulevardier.jpg/512px-SOHO_-_Boulevardier.jpg"
     },
     {
+      "id": "2",
+      "base": "rye",
       "cocktail": "Manhattan",
       "type": "French-Italian",
       "alcohol": "true",
@@ -74,7 +80,7 @@
           "unit": "oz"
         },
         {
-          "name": "Campari",
+          "name": "Sweet Vermouthe",
           "volume": "1",
           "unit": "oz"
         },
@@ -93,7 +99,79 @@
         "Strain into a chilled coupe.",
         "Garnish with a brandied cherry."
       ],
-      "history": "",
+      "history": "The Manhattan was the most famous cocktail in the world shortly after it was invented in New York City’s Manhattan Club, some time around 1880 (as the story goes). Over the years, the whiskey classic has dipped in and out of fashion before finding its footing as one of the cornerstones of the craft cocktail renaissance.",
+      "video": "https://youtu.be/wiOxt4J5zaM",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Manhattan_cocktail_with_ice.jpg/511px-Manhattan_cocktail_with_ice.jpg"
+    },
+    {
+      "id": "3",
+      "base": "bourbon",
+      "cocktail": "Manhattan",
+      "type": "American",
+      "alcohol": "true",
+      "ingredients": [
+        {
+          "name": "Whiskey, bourbon",
+          "volume": "2",
+          "unit": "oz"
+        },
+        {
+          "name": "Sweet Vermouthe",
+          "volume": "1",
+          "unit": "oz"
+        },
+        {
+          "name": "Bitters",
+          "volume": "3",
+          "unit": "dashes"
+        },
+        {
+          "name": "Cherry",
+          "volume": "1"
+        }
+      ],
+      "directions": [
+        "Add all the bourbon, sweet vermouth and both bitters to a mixing glass with ice, and stir until well-chilled.",
+        "Strain into a chilled coupe.",
+        "Garnish with a brandied cherry."
+      ],
+      "history": "The Manhattan was the most famous cocktail in the world shortly after it was invented in New York City’s Manhattan Club, some time around 1880 (as the story goes). Over the years, the whiskey classic has dipped in and out of fashion before finding its footing as one of the cornerstones of the craft cocktail renaissance.",
+      "video": "https://youtu.be/wiOxt4J5zaM",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Manhattan_cocktail_with_ice.jpg/511px-Manhattan_cocktail_with_ice.jpg"
+    },
+    {
+      "id": "4",
+      "base": "scotch",
+      "cocktail": "Rob Roy",
+      "type": "American",
+      "alcohol": "true",
+      "ingredients": [
+        {
+          "name": "Whiskey, scotch",
+          "volume": "2",
+          "unit": "oz"
+        },
+        {
+          "name": "Sweet Vermouthe",
+          "volume": "1",
+          "unit": "oz"
+        },
+        {
+          "name": "Bitters",
+          "volume": "3",
+          "unit": "dashes"
+        },
+        {
+          "name": "Cherry",
+          "volume": "1"
+        }
+      ],
+      "directions": [
+        "Add all the bourbon, sweet vermouth and both bitters to a mixing glass with ice, and stir until well-chilled.",
+        "Strain into a chilled coupe.",
+        "Garnish with a brandied cherry."
+      ],
+      "history": "The Rob Roy cocktail is similar to the beloved Manhattan, except the Rob Roy calls for scotch instead of American whiskey. The swap from bourbon (or rye) to scotch may not seem significant, but the difference is notable. And delicious.",
       "video": "https://youtu.be/wiOxt4J5zaM",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Manhattan_cocktail_with_ice.jpg/511px-Manhattan_cocktail_with_ice.jpg"
     }

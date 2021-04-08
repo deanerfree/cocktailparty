@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "server for cocktails application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "kurtiscoding",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deanerfree/cocktailparty.git"
+  },
+  "keywords": [
+    "cocktails",
+    "api",
+    "alcohol"
+  ],
+  "bugs": {
+    "url": "https://github.com/deanerfree/cocktailparty/issues"
+  },
+  "homepage": "https://github.com/deanerfree/cocktailparty#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3",
+    "nodemon": "^2.0.7"
+  }
+}
