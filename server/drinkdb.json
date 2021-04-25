@@ -38,7 +38,7 @@
       "alcohol": "true",
       "ingredients": [
         {
-          "name": "Whiskey, Rye (or bourbon)",
+          "name": "Rye",
           "volume": "1",
           "unit": "oz"
         },
@@ -72,7 +72,7 @@
       "alcohol": "true",
       "ingredients": [
         {
-          "name": "Whiskey, rye",
+          "name": "Bourbon",
           "volume": "2",
           "unit": "oz"
         },
@@ -102,47 +102,12 @@
     },
     {
       "id": "3",
-      "cocktail": "Manhattan",
-      "type": "American",
-      "alcohol": "true",
-      "ingredients": [
-        {
-          "name": "Whiskey, bourbon",
-          "volume": "2",
-          "unit": "oz"
-        },
-        {
-          "name": "Sweet Vermouthe",
-          "volume": "1",
-          "unit": "oz"
-        },
-        {
-          "name": "Bitters",
-          "volume": "3",
-          "unit": "dashes"
-        },
-        {
-          "name": "Cherry",
-          "volume": "1"
-        }
-      ],
-      "directions": [
-        "Add all the bourbon, sweet vermouth and both bitters to a mixing glass with ice, and stir until well-chilled.",
-        "Strain into a chilled coupe.",
-        "Garnish with a brandied cherry."
-      ],
-      "history": "The Manhattan was the most famous cocktail in the world shortly after it was invented in New York City’s Manhattan Club, some time around 1880 (as the story goes). Over the years, the whiskey classic has dipped in and out of fashion before finding its footing as one of the cornerstones of the craft cocktail renaissance.",
-      "video": "https://youtu.be/wiOxt4J5zaM",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Manhattan_cocktail_with_ice.jpg/511px-Manhattan_cocktail_with_ice.jpg"
-    },
-    {
-      "id": "4",
       "cocktail": "Rob Roy",
       "type": "American",
       "alcohol": "true",
       "ingredients": [
         {
-          "name": "Whiskey, scotch",
+          "name": "Scotch",
           "volume": "2",
           "unit": "oz"
         },
@@ -171,7 +136,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Manhattan_cocktail_with_ice.jpg/511px-Manhattan_cocktail_with_ice.jpg"
     },
     {
-      "id": "5",
+      "id": "4",
       "cocktail": "Enzoni",
       "type": "American",
       "alcohol": "true",
@@ -208,7 +173,7 @@
         "Strain over fresh ice into a double old fashioned glass",
         "Garnish with skewered grape"
       ],
-      "history": "The Rob Roy cocktail is similar to the beloved Manhattan, except the Rob Roy calls for scotch instead of American whiskey. The swap from bourbon (or rye) to scotch may not seem significant, but the difference is notable. And delicious.",
+      "history": "The Enzoni cocktail is a cross between a Negroni and a Gin Sour where the Sweet Vermouth comes in the form of muddled green grapes. An ideal drink to introduce a novice to Campari!\nFirst created by Vincenzo Errico whilst tending bar at Milk & Honey, NYC. Vincenzo was trained by the legendary Dick Bradsell (creator of the Espresso Martini).",
       "video": "https://www.youtube.com/watch?v=1kKgoGVVFmc",
       "image": "http://s3.amazonaws.com/barnotes/icons/10025/medium/20180812_173838.2018.jpg?1534120720"
     }
