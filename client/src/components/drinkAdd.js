@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { post } from '../../../server/Routes/drinkSubmit'
+import { post } from '../../../server/Routes/cocktailSubmit'
 
 const addDrink = () => {
   const [submitting, setSubmitting] = useState(false)
