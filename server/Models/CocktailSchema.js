@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-let newCocktail = new Schema({
+let newCocktail = new mongoose.Schema({
   //The name of the cocktail
   name: {
     type: String,
@@ -15,7 +15,7 @@ let newCocktail = new Schema({
   },
   //Is this alcoholic or non-alcoholic
   alcohol: {
-    type: true,
+    type: Boolean,
   },
   //list of ingredients
   ingredients: [
@@ -40,6 +40,10 @@ let newCocktail = new Schema({
   image: {
     type: String,
   },
+  meta: {
+    type: Date,
+    default: new Date(),
+  },
 })
 
-module.export = mongoose.model('drink', newCocktail)
+module.export = mongoose.model('cocktail', newCocktail)
