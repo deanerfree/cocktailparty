@@ -1,4 +1,4 @@
-// const CocktailModel = require('../Models/CocktailSchema')
+const CocktailModel = require('../Models/cocktailSchema')
 // const express = require('express')
 // const router = express.Router()
 

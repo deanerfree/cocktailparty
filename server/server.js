@@ -4,7 +4,7 @@ const dotenv = require('dotenv')
 const mongoose = require('mongoose')
 const cors = require('cors')
 const routes = require('./Routes/cocktailSubmit')
-
+// const routes = require('./Routes/drinkSubmit')
 const app = express()
 dotenv.config()
 

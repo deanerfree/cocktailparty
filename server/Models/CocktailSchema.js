@@ -20,19 +20,19 @@ let newCocktail = new mongoose.Schema({
   //list of ingredients
   ingredients: [
     {
-      name: String,
-      volume: String,
-      unit: String,
-      required: true,
+      name: { type: String, required: true },
+      volume: { type: String, required: true },
+      unit: { type: String, required: true },
     },
   ],
+
   //directions to make the cocktail
   directions: {
-    body: String,
+    type: String,
     required: true,
   },
   history: {
-    body: String,
+    type: String,
   },
   video: {
     type: String,
@@ -46,4 +46,4 @@ let newCocktail = new mongoose.Schema({
   },
 })
 
-module.export = mongoose.model('cocktail', newCocktail)
+module.exports = mongoose.model('newCocktail', newCocktail)
