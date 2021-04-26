@@ -1,12 +1,12 @@
 const express = require('express')
 const router = express.Router()
-// const { getCocktails, createCocktail } = require('../controller/cocktailSubmit')
-const getCocktails = require('../controller/cocktailSubmit')
-const createCocktail = require('../controller/cocktailSubmit')
+//imported from controller
+const cocktailController = require('../controller/cocktailSubmit')
 
 router.use(express.json())
-
-router.get('api/cocktailList', getCocktails)
-router.post('/api/newCocktail', createCocktail)
+//GET request list of cocktails
+router.get('/cocktailList', cocktailController.getCocktails)
+//POST request for creating a new cocktail
+router.post('/newCocktail', cocktailController.createCocktails)
 
 module.exports = router

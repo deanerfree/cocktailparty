@@ -1,12 +1,12 @@
 // const CocktailModel = require('../Models/CocktailSchema')
-const express = require('express')
-const router = express.Router()
+// const express = require('express')
+// const router = express.Router()
 
-router.get('/api/cocktailList', (req, res) => {
+exports.getCocktails = (req, res) => {
   res.send('made it this far!')
-})
-router.post('api/newCocktail', (req, res) => {
+}
+exports.createCocktails = (req, res) => {
   res.send('Gotit')
-})
+}
 
-module.exports = router
+// module.exports = router

@@ -4,11 +4,11 @@ const dotenv = require('dotenv')
 const mongoose = require('mongoose')
 const cors = require('cors')
 const routes = require('./Routes/cocktailSubmit')
-// const routes = require('./Routes/drinkSubmit')
+
 const app = express()
 dotenv.config()
 
-app.use('/', routes)
+app.use('/api', routes)
 const port = process.env.PORT || 3000
 
 //Connecting to the db
