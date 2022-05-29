@@ -29,6 +29,8 @@ let newCocktail = new mongoose.Schema({
   //directions to make the cocktail
   directions: {
     type: String,
+    minlength: 3,
+    maxlength: 256,
     required: true,
   },
   history: {

@@ -18,7 +18,7 @@
   margin: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .navbarItems {
@@ -56,4 +56,24 @@
   margin: 30px;
   padding-left: 80px;
   padding-right: 80px;
+}
+
+.drinklist {
+  padding:15px;
+  margin: 10px;
+  border: 1px solid rgba(164, 164, 164, 0.677);
+  border-radius: 10px;
+}
+
+.drinkImage {
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+.drkImgIng {
+  display: flex;
+  flex-direction: row;
+}
+.ingredients {
+  margin: 0px 0px 0px 20px;
 }
